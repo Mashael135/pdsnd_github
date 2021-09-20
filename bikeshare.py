@@ -52,7 +52,7 @@ def get_filters():
             #We were not able to get the name of the month to analyze data so we continue the loop.
             print("Sorry we were not able to get the name of the day to filter data, Please input either 'all' to apply no day filter or monday, tuesday, ... sunday.\n")
 
-    print('-'*40)
+    print('_'*50)
     return city, month, day
 
 
@@ -116,7 +116,7 @@ def time_stats(df):
     print("The most common start hour from the given fitered data is: " + str(common_start_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*60)
 
 
 def station_stats(df):
@@ -141,7 +141,7 @@ def station_stats(df):
     print("The most frequent combination of start station and end station trip is : " + str(frequent_combination.split("||")))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*30)
 
 
 def trip_duration_stats(df):
