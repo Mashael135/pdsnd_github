@@ -141,7 +141,7 @@ def station_stats(df):
     print("The most frequent combination of start station and end station trip is : " + str(frequent_combination.split("||")))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*30)
 
 
 def trip_duration_stats(df):
