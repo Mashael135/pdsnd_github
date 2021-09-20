@@ -202,12 +202,14 @@ def display_raw_data(df):
     """
     print(df.head())
     next = 0
+	//get input user to use if they want to see more five rows.
     while True:
         view_raw_data = input('\nWould you like to view next five row of raw data? Enter yes or no.\n')
         if view_raw_data.lower() != 'yes':
             return
         next = next + 5
         print(df.iloc[next:next+5])
+
 
 
 def main():
@@ -229,6 +231,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
+
 
 
 if __name__ == "__main__":
